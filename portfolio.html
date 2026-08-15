@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elston@portfolio: ~</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #ffffff;
+            --cmd-color: #a3be8c;
+            --prompt-color: #a3be8c;
+            --font-family: 'Courier New', Courier, monospace;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            padding: 20px;
+            line-height: 1.4;
+            margin: 0;
+        }
+        .terminal-window {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(163, 190, 140, 0.2);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .prompt { color: var(--prompt-color); font-weight: bold; }
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background-color: var(--cmd-color);
+            animation: blink 1s infinite;
+            vertical-align: middle;
+        }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        .section { margin-bottom: 25px; }
+        .cmd { color: var(--cmd-color); margin-bottom: 10px; }
+        a { color: var(--text-color); text-decoration: none; border-bottom: 1px dashed var(--text-color); }
+        a:hover { background: var(--text-color); color: var(--bg-color); }
+        ul { list-style: none; padding-left: 20px; }
+        li::before { content: "> "; color: var(--prompt-color); }
+    </style>
+</head>
+<body>
+    <div class="terminal-window">
+        <div class="section">
+            <div class="cmd"><span class="prompt">elston@portfolio:~$</span> whoami</div>
+            <div>
+                <strong>Elston</strong><br>
+                Aspiring Cybersecurity Professional | MCA Student<br>
+                Focused on Web App Security, Linux, and Bug Bounty Hunting.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="cmd"><span class="prompt">elston@portfolio:~$</span> cat contact.txt</div>
+            <div>
+                Email: <a href="mailto:elstonnd@gmail.com">elstonnd@gmail.com</a><br>
+                GitHub: <a href="https://github.com/37ston" target="_blank">github.com/37ston</a><br>
+                Location: Mangaluru, Karnataka, India
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="cmd"><span class="prompt">elston@portfolio:~$</span> ls skills/</div>
+            <div>
+                <strong>Languages:</strong> Python, JavaScript, C<br>
+                <strong>Web:</strong> HTML, CSS, JS, Flask, SQLite<br>
+                <strong>OS:</strong> Linux (Void Linux), Windows<br>
+                <strong>Tools:</strong> Burp Suite, GitHub, OWASP Top 10, HTTP Analysis
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="cmd"><span class="prompt">elston@portfolio:~$</span> cat projects/food_management.md</div>
+            <div>
+                <strong>Food Management System</strong> (Flask, SQLite, JS)<br>
+                - Web-based food management application<br>
+                - Implemented CRUD operations & image uploads<br>
+                - Responsive UI for efficient food tracking
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="cmd"><span class="prompt">elston@portfolio:~$</span> grep "learning" security_log.txt</div>
+            <div>
+                - PortSwigger Web Security Academy<br>
+                - Bug Bounty Methodology<br>
+                - Broken Access Control & IDOR<br>
+                - Linux System Administration
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="cmd"><span class="prompt">elston@portfolio:~$</span> <span class="cursor"></span></div>
+        </div>
+    </div>
+</body>
+</html>
